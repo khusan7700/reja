@@ -40,6 +40,6 @@ app.get('/', function (req, res) {
 
 const server = http.createServer(app);
 let PORT = 3000;
-server.listen(PORT, function(){
-    console.log(`The server is running seccessfully on port: ${{PORT}}`);
+server.listen(PORT, function () {
+    console.log(`The server is running seccessfully on port: ${PORT}`);
 });
