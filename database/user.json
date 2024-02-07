@@ -1,0 +1,15 @@
+{
+    "name": "Khusan",
+    "nickname": "Usman",
+    "profession": "software Engineer",
+    "age": 32,
+    "residence": "S.korea",
+    "freelance": "Availagle",
+    "address": "S.korea, daegu",
+    "language": ["Uzbek", "Korean", "English", "Russian"],
+    "skills": ["Html", "Css", "JS", "NodeJS", "ReacktJS", "AdobeAfterEffects", "AdobePrimerePro", "Photoshop" ],
+    "extra_skills": ["Bootstrapt, Materialize", "Styling, Sass", "Django, Flask", "GIT Knowledge" ],
+    "work_plase": "Video editing Company"
+
+
+}
