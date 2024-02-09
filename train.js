@@ -1,20 +1,17 @@
 console.log("train ishga tushdi");
 // A-TASK
 
-function calculate (a, e) {
-    return a + e; 
+function countLetter(letter, word) {
+    let count = 0;
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] === letter) {
+            count++;
+        }
+    }
+    return count;
 }
 
-const c = calculate("natija", " engineer");
-
-console.log("Natija:", c);
-
-
-
-
-
-
-
+console.log(countLetter("e", "engineer"));
 
 
 
