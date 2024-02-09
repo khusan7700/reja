@@ -1,15 +1,38 @@
-
+console.log("train ishga tushdi");
 // A-TASK
 
-console.log("Jack Ma maslahatlari");
-const list = [
-"yahshi talaba bo'ling", // 0-20
-"to'ri boshliq tanlang va kop hato qiling", //20-30
-"O'zingizga ishlashingizni boshlang", //30-40
-"Siz kuchli bolgan narsalarni qiling", //40-50
-"Yoshlarga incestitsiya qiling", //50-60
-"Endi dam oling, foydasi yo'q endi", //60
-];
+function calculate (a, e) {
+    return a + e; 
+}
+
+const c = calculate("natija", " engineer");
+
+console.log("Natija:", c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------20-21 darlar--------------------
+
+// console.log("Jack Ma maslahatlari");
+// const list = [
+// "yahshi talaba bo'ling", // 0-20
+// "to'ri boshliq tanlang va kop hato qiling", //20-30
+// "O'zingizga ishlashingizni boshlang", //30-40
+// "Siz kuchli bolgan narsalarni qiling", //40-50
+// "Yoshlarga incestitsiya qiling", //50-60
+// "Endi dam oling, foydasi yo'q endi", //60
+// ];
 
 
 //-----------call-back----------------
@@ -44,19 +67,19 @@ const list = [
 
 
 // -------------------Asynchronous function--------------------------------
-async function maslahatBering(a,) {
-    if (typeof a !== "number") throw new Error ("insert a number");
-    else if (a <= 20) return list[0];
-    else if (a > 20 && a <= 30) return list[1];
-    else if (a > 30 && a <= 40) return list[2];
-    else if (a > 40 && a <= 50) return list[3];
-    else if (a > 50 && a <= 60) return list[4];
-else {
-  return new Promise ((resolv, reject) => {
-            setInterval(() => {
-            resolve(list [5]);
-            }, 1000);
-        });
+// async function maslahatBering(a,) {
+//     if (typeof a !== "number") throw new Error ("insert a number");
+//     else if (a <= 20) return list[0];
+//     else if (a > 20 && a <= 30) return list[1];
+//     else if (a > 30 && a <= 40) return list[2];
+//     else if (a > 40 && a <= 50) return list[3];
+//     else if (a > 50 && a <= 60) return list[4];
+// else {
+//   return new Promise ((resolv, reject) => {
+//             setInterval(() => {
+//             resolve(list [5]);
+//             }, 1000);
+//         });
 
 
     
@@ -71,8 +94,8 @@ else {
     // }, 5000);
 
     
-}
-}
+// }
+// }
 
 //---------------------------
 
@@ -109,12 +132,12 @@ else {
 // console.log("passed here 1");
 
 //await 
-async function run() {
-    let javob = await maslahatBering(20);
-    console.log(javob);
-    javob = await maslahatBering(31);
-    console.log(javob);
-    javob = await maslahatBering(41);
-    console.log(javob);
-}
-run();
+// async function run() {
+//     let javob = await maslahatBering(20);
+//     console.log(javob);
+//     javob = await maslahatBering(31);
+//     console.log(javob);
+//     javob = await maslahatBering(41);
+//     console.log(javob);
+// }
+// run();
