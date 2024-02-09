@@ -335,11 +335,9 @@ position: absolute;
 }
 
 abbr {
-   background-color: black;
-   color: white;
    font-size: 20px;
    cursor: pointer;
-   
+
 }
 .m_b_test{
    width: 400px;
