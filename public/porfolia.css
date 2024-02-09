@@ -8,7 +8,7 @@
    background-color: rgb(215, 211, 211);
   }
 .parent{
-   width: 100%;
+   width: 1440px;
    height: 100%;
    position: relative;
 
@@ -143,7 +143,12 @@ margin-top: 20px;
 color: rgba(118, 118, 118, 1.00);
 
 }
-
+.icon100{
+   position: relative;
+   color: red;
+   z-index: 999;
+   font-size: 100px;
+}
 .level {
    margin-left: 40px;
    margin-top: 10px;
@@ -220,6 +225,50 @@ color: rgba(118, 118, 118, 1.00);
       margin-top: 20px;
       color: rgba(118, 118, 118, 1.00);
    }
+   .i100{
+position: absolute;
+top: 595px;
+left: 65px;
+   }
+
+   .i80{
+      position: absolute;
+      top: 638px;
+      left: 65px;
+  }
+
+  .i60{
+   position: absolute;
+   top: 680px;
+   left: 65px;
+}
+.i90{
+   position: absolute;
+   top: 793px;
+   left: 65px;
+}
+
+.i85{
+   position: absolute;
+   top: 839px;
+   left: 65px;
+}
+.i80_2{
+   position: absolute;
+   top: 881px;
+   left: 65px;
+}
+
+.i75{
+   position: absolute;
+   top: 925px;
+   left: 65px;
+}
+.i85_2{
+   position: absolute;
+   top: 965px;
+   left: 65px;
+}
 
    /*                   middle box                    */
    /*                   middle box                    */
@@ -264,6 +313,9 @@ Top: -3px;
 right: 61px;
 position: absolute;
 }
+
+
+/*                   right box                */
 .r_b_icon{
    width: auto;
    display: flex;
@@ -280,6 +332,13 @@ position: absolute;
    flex-direction: column;
    gap: 40px;
    margin-top: 170px;
+}
+
+abbr {
+   background-color: black;
+   color: white;
+   font-size: 20px;
+   cursor: pointer;
 }
 .m_b_test{
    width: 400px;
