@@ -11,6 +11,9 @@ const list = [
 "Endi dam oling, foydasi yo'q endi", //60
 ];
 
+
+//-----------call-back----------------
+
 // function maslahatBering(a, callback) {
 //     if (typeof a !== "number") callback ("insert a number", null);
 //     else if (a <= 20) callback(null, list[0]);
@@ -49,17 +52,32 @@ async function maslahatBering(a,) {
     else if (a > 40 && a <= 50) return list[3];
     else if (a > 50 && a <= 60) return list[4];
 else {
-        return new Promise ((resolv, reject) => {
-            setTimeout(() => {
-                resolve(list [5]);
+  return new Promise ((resolv, reject) => {
+            setInterval(() => {
+            resolve(list [5]);
             }, 1000);
-        })
+        });
+
+
+    
+        // return new Promise ((resolv, reject) => {
+        //     setTimeout(() => {
+        //         resolve(list [5]);
+        //     }, 1000);
+        // })
 
     // setTimeout(function() {
     //     callback(null, list[5]);
     // }, 5000);
+
+    
 }
 }
+
+//---------------------------
+
+
+
 // console.log("Passed here 0");
 // // then/catch
 // maslahatBering(20)
