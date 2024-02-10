@@ -2,22 +2,16 @@ console.log("train ishga tushdi");
 // A-TASK
 
 function countLetter(letter, word) {
-    let count = 0;
-    for (let i = 0; i < word.length; i++) {
-        if (word[i] === letter) {
-            count++;
-        }
+  let count = 0;
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === letter) {
+      count++;
     }
-    return count;
+  }
+  return count;
 }
 
 console.log(countLetter("e", "engineer"));
-
-
-
-
-
-
 
 // --------------------20-21 darlar--------------------
 
@@ -30,7 +24,6 @@ console.log(countLetter("e", "engineer"));
 // "Yoshlarga incestitsiya qiling", //50-60
 // "Endi dam oling, foydasi yo'q endi", //60
 // ];
-
 
 //-----------call-back----------------
 
@@ -60,9 +53,6 @@ console.log(countLetter("e", "engineer"));
 
 // console.log("passed here 1");
 
-
-
-
 // -------------------Asynchronous function--------------------------------
 // async function maslahatBering(a,) {
 //     if (typeof a !== "number") throw new Error ("insert a number");
@@ -78,32 +68,27 @@ console.log(countLetter("e", "engineer"));
 //             }, 1000);
 //         });
 
+// return new Promise ((resolv, reject) => {
+//     setTimeout(() => {
+//         resolve(list [5]);
+//     }, 1000);
+// })
 
-    
-        // return new Promise ((resolv, reject) => {
-        //     setTimeout(() => {
-        //         resolve(list [5]);
-        //     }, 1000);
-        // })
+// setTimeout(function() {
+//     callback(null, list[5]);
+// }, 5000);
 
-    // setTimeout(function() {
-    //     callback(null, list[5]);
-    // }, 5000);
-
-    
 // }
 // }
 
 //---------------------------
-
-
 
 // console.log("Passed here 0");
 // // then/catch
 // maslahatBering(20)
 //  .then((data) => {
 //     maslahatBering(30)
-//  .then((data) => {  
+//  .then((data) => {
 //     maslahatBering(40)
 //  .then((data) => {                           //<-- bu holat ozgina chalkashroq
 //     console.log("Javob", data);
@@ -128,7 +113,7 @@ console.log(countLetter("e", "engineer"));
 
 // console.log("passed here 1");
 
-//await 
+//await
 // async function run() {
 //     let javob = await maslahatBering(20);
 //     console.log(javob);
