@@ -39,13 +39,34 @@ app.set("view engine", "ejs");
 //     res.end(`<h1>Siz sovg'alar bo'limidasiz</h1>`);
 // });
 
-// app.post("/create-item", (req, res) => {
-//     console.log(req.body);
-//     res.json({test: "seccess"}); //res.json qaytaradi
-// });
+app.post("/create-item", (req, res) => {
+  console.log("user entered /create-item");
+  console.log(req.body);
+  const new_Reja = req.body.Reja;
+  db.collection("plans").insertOne({ Reja: new_Reja }, (err, data) => {
+    if (err) {
+      console.log(err);
+      res.end("something went wrong");
+    } else {
+      res.end("successfully added");
+    }
+  });
+  // res.json({ test: "seccess" }); //res.json qaytaradi
+});
 
 app.get("/", function (req, res) {
-  res.render("reja");
+  console.log("user entered /");
+  db.collection("plans")
+    .find()
+    .toArray((err, data) => {
+      if (err) {
+        console.log(err);
+        res.end("someting went wrong");
+      } else {
+        res.render("Reja", { items: data });
+      }
+    });
+  // res.render("Reja");
 });
 
 app.get("/portfolia", (req, res) => {

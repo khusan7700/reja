@@ -10,18 +10,18 @@
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./harid.css" />
+    <link rel="stylesheet" href="./reja.css" />
   </head>
   <body style="background-color: #b8bbd1">
     <div class="container">
-      <h1 class="display-4 text-center py-1">REJA VA MAQSADLAR</h1>
+      <h1 class="display-4 text-center py-1">Reja VA MAQSADLAR</h1>
 
       <div class="jumbotron p-3 shadow-sm">
         <form id="create-form" action="/create-item" method="POST">
           <div class="d-flex align-items-center">
             <input
               id="create-field"
-              name="item"
+              name="Reja"
               autofocus
               autocomplete="off"
               type="text"
@@ -33,8 +33,35 @@
           </div>
         </form>
       </div>
+
+      <ul id="item-list" class="list-group pb-5">
+        <% items.map(function(item) { %>
+
+        <li
+          class="list-group-item list-groip-item-info d-flex align-items-center justify-content-between"
+        >
+          <span class="item-text"><%=item.Reja%></span>
+          <div>
+            <button
+              data-id="<%=item._id%>"
+              class="edit-me btn btn-secondary btn-sm mr-1"
+            >
+              O'zgartirish
+            </button>
+            <button
+              data-id="<%=item._id%>"
+              class="delete-me btn btn-danger btn-sm"
+            >
+              O'chirish
+            </button>
+          </div>
+        </li>
+
+        <% }) %>
+      </ul>
+
       <form action="">
-        <button class="btn_reja">Hamma rejalarni qo'shish</button>
+        <button class="btn_Reja">Hamma Rejalarni qo'shish</button>
       </form>
     </div>
   </body>

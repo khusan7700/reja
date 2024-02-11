@@ -1,11 +1,10 @@
 const http = require("http");
 
 const MongoDB = require("mongodb");
-console.log("mongo ishga tushdi");
 
 let db;
 const connectionString =
-  "mongodb+srv://Usman:7I1vQ04IkY8Mqs8w@cluster0.5e72uaw.mongodb.net/reja";
+  "mongodb+srv://Usman:7I1vQ04IkY8Mqs8w@cluster0.5e72uaw.mongodb.net/Reja";
 
 MongoDB.connect(
   connectionString,

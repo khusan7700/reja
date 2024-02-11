@@ -1,5 +1,5 @@
 {
-  "name": "reja",
+  "name": "Reja",
   "version": "1.0.0",
   "description": "bu bizning birinchi loyihamiz",
   "main": "server.js",
@@ -18,6 +18,6 @@
     "express": "^4.18.2",
     "json": "^11.0.0",
     "JSON": "^1.0.0",
-    "mongodb": "^3.7.4"
+    "mongodb": "^3.2.6"
   }
 }
