@@ -1,17 +1,30 @@
 console.log("train ishga tushdi");
-// A-TASK
+//     B-TASK
 
-function countLetter(letter, word) {
-  let count = 0;
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] === letter) {
-      count++;
-    }
-  }
-  return count;
+function countDigits(a) {
+  return a;
 }
 
-console.log(countLetter("e", "engineer"));
+const b = 2;
+const c = countDigits(5 + b);
+
+console.log(c);
+
+// console.log(countLetter("e", "engineer"));
+
+// A-TASK
+
+// function countLetter(letter, word) {
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === letter) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countLetter("e", "engineer"));
 
 // --------------------20-21 darlar--------------------
 
