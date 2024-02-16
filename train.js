@@ -1,67 +1,96 @@
 console.log("train ishga tushdi");
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
 
-  // Mahsulotlar qoldiqini hisoblash
-  qoldiq() {
-    console.log(
-      `Hozir ${this.getTime()}da ${this.non}ta non, ${
-        this.lagmon
-      } porse lag'mon va ${this.cola}ta cola mavjud!`
-    );
-  }
+// D-task
 
-  // Mahsulotlardan sotish
-  sotish(mahsulot, miqdori) {
-    if (mahsulot === "non") {
-      this.non -= miqdori;
-    } else if (mahsulot === "lagmon") {
-      this.lagmon -= miqdori;
-    } else if (mahsulot === "cola") {
-      this.cola -= miqdori;
-    }
-    console.log(
-      `${miqdori}ta ${mahsulot} sotildi. Hozir ${this.getTime()}da qoldiq: ${
-        this.non
-      }ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola!`
-    );
-  }
+/* Shunday function tuzing, u 2ta string parametr ega bolsin,
+  hamda agar har ikkala string bir hil harflardan iborat bolsa true
+   aks holda false qaytarsin
+ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
 
-  // Mahsulotlarni qabul qilish
-  qabul(mahsulot, miqdori) {
-    if (mahsulot === "non") {
-      this.non += miqdori;
-    } else if (mahsulot === "lagmon") {
-      this.lagmon += miqdori;
-    } else if (mahsulot === "cola") {
-      this.cola += miqdori;
-    }
-    console.log(
-      `${miqdori}ta ${mahsulot} qabul qilindi. Hozir ${this.getTime()}da qoldiq: ${
-        this.non
-      }ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola!`
-    );
-  }
+function checkstring(mit1, mit2) {
+  const group1 = mit1.split("");
+  const group2 = mit2.split("");
 
-  // Vaqtni qaytarish
-  getTime() {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, "0");
-    const minutes = String(now.getMinutes()).padStart(2, "0");
-    return `${hours}:${minutes}`;
+  group1.sort();
+  group2.sort();
+
+  const sortedmit1 = group1.join("");
+  const sortedmit2 = group2.join("");
+
+  if (sortedmit1 === sortedmit2) {
+    return true;
+  } else {
+    return false;
   }
 }
 
-// Test
-const shop = new Shop(4, 5, 2);
-shop.qoldiq(); // Hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud!
-shop.sotish("non", 3); // 3ta non sotildi. Hozir 20:40da qoldiq: 1ta non, 5ta lagmon va 2ta cola!
-shop.qabul("cola", 4); // 4ta cola qabul qilindi. Hozir 20:40da qoldiq: 1ta non, 5ta lagmon va 6ta cola!
-shop.qoldiq(); // Hozir 20:40da 1ta non, 5ta lagmon va 6ta cola mavjud!
+console.log(checkstring("mitgroup", "gmtiprou"));
+
+// C-task
+
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
+
+//   // Mahsulotlar qoldiqini hisoblash
+//   qoldiq() {
+//     console.log(
+//       `Hozir ${this.getTime()}da ${this.non}ta non, ${
+//         this.lagmon
+//       } porse lag'mon va ${this.cola}ta cola mavjud!`
+//     );
+//   }
+
+//   // Mahsulotlardan sotish
+//   sotish(mahsulot, miqdori) {
+//     if (mahsulot === "non") {
+//       this.non -= miqdori;
+//     } else if (mahsulot === "lagmon") {
+//       this.lagmon -= miqdori;
+//     } else if (mahsulot === "cola") {
+//       this.cola -= miqdori;
+//     }
+//     console.log(
+//       `${miqdori}ta ${mahsulot} sotildi. Hozir ${this.getTime()}da qoldiq: ${
+//         this.non
+//       }ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola!`
+//     );
+//   }
+
+//   // Mahsulotlarni qabul qilish
+//   qabul(mahsulot, miqdori) {
+//     if (mahsulot === "non") {
+//       this.non += miqdori;
+//     } else if (mahsulot === "lagmon") {
+//       this.lagmon += miqdori;
+//     } else if (mahsulot === "cola") {
+//       this.cola += miqdori;
+//     }
+//     console.log(
+//       `${miqdori}ta ${mahsulot} qabul qilindi. Hozir ${this.getTime()}da qoldiq: ${
+//         this.non
+//       }ta non, ${this.lagmon}ta lag'mon va ${this.cola}ta cola!`
+//     );
+//   }
+
+//   // Vaqtni qaytarish
+//   getTime() {
+//     const now = new Date();
+//     const hours = String(now.getHours()).padStart(2, "0");
+//     const minutes = String(now.getMinutes()).padStart(2, "0");
+//     return `${hours}:${minutes}`;
+//   }
+// }
+
+// // Test
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq(); // Hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud!
+// shop.sotish("non", 3); // 3ta non sotildi. Hozir 20:40da qoldiq: 1ta non, 5ta lagmon va 2ta cola!
+// shop.qabul("cola", 4); // 4ta cola qabul qilindi. Hozir 20:40da qoldiq: 1ta non, 5ta lagmon va 6ta cola!
+// shop.qoldiq(); // Hozir 20:40da 1ta non, 5ta lagmon va 6ta cola mavjud!
 
 //     B-TASK
 
@@ -116,7 +145,7 @@ shop.qoldiq(); // Hozir 20:40da 1ta non, 5ta lagmon va 6ta cola mavjud!
 //         callback(null, list[5]);
 //     }, 5000);
 
-//     // callback(null, list[5]); o'rni ga tegadegi ishlatsak ham boladi
+// callback(null, list[5]); o'rni ga tegadegi ishlatsak ham boladi
 // }
 // }
 
