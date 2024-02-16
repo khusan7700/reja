@@ -47,6 +47,12 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
       console.log("Iltmos qaytatdan harakat qiling!");
     });
 });
+//-------------------delete operatsiyasi--------------------------
+//-------------------delete operatsiyasi--------------------------
+//-------------------delete operatsiyasi--------------------------
+//-------------------delete operatsiyasi--------------------------
+//-------------------delete operatsiyasi--------------------------
+//-------------------delete operatsiyasi--------------------------
 
 document.addEventListener("click", function (e) {
   //delete oper
@@ -64,7 +70,12 @@ document.addEventListener("click", function (e) {
         });
     }
   }
-
+  //-------------------edit operatsiyasi--------------------------
+  //-------------------edit operatsiyasi--------------------------
+  //-------------------edit operatsiyasi--------------------------
+  //-------------------edit operatsiyasi--------------------------
+  //-------------------edit operatsiyasi--------------------------
+  //-------------------edit operatsiyasi--------------------------
   //edit oper
   if (e.target.classList.contains("edit-me")) {
     // alert("siz edit tugmasini bosdingiz");

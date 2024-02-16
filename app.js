@@ -67,7 +67,7 @@ app.post("/edit-item", (req, res) => {
   console.log(data);
   db.collection("plans").findOneAndUpdate(
     { _id: new mongodb.ObjectId(data.id) },
-    { $set: { reja: data.new_input } },
+    { $set: { Reja: data.new_input } },
     function (err, data) {
       res.json({ state: "success" });
     }
