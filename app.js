@@ -1,5 +1,6 @@
 console.log("app.js ishga tushdi");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 
 const fs = require("fs");
