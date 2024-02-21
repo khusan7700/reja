@@ -1,30 +1,42 @@
 console.log("train ishga tushdi");
 
-// D-task
+//---------------- E task ------------------------
+// Shunday function tuzing, u bitta string argumentni qabul
+// qilib osha stringni teskari qilib return qilsin.
+//MASALAN: getReverse("hello") return qilsin "olleh"
+function hello(harf) {
+  if (harf === "") return "";
+  else return hello(harf.substr(1)) + harf.charAt(0);
+}
+let harf = "gniog si woh";
+const natija = hello(harf);
+console.log(natija);
+
+//------------------D-task-------------------------
 
 /* Shunday function tuzing, u 2ta string parametr ega bolsin,
   hamda agar har ikkala string bir hil harflardan iborat bolsa true
    aks holda false qaytarsin
  MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true; */
 
-function checkstring(mit1, mit2) {
-  const group1 = mit1.split("");
-  const group2 = mit2.split("");
+// function checkstring(mit1, mit2) {
+//   const group1 = mit1.split("");
+//   const group2 = mit2.split("");
 
-  group1.sort();
-  group2.sort();
+//   group1.sort();
+//   group2.sort();
 
-  const sortedmit1 = group1.join("");
-  const sortedmit2 = group2.join("");
+//   const sortedmit1 = group1.join("");
+//   const sortedmit2 = group2.join("");
 
-  if (sortedmit1 === sortedmit2) {
-    return true;
-  } else {
-    return false;
-  }
-}
+//   if (sortedmit1 === sortedmit2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-console.log(checkstring("mitgroup", "gmtiprou"));
+// console.log(checkstring("mitgroup", "gmtiprou"));
 
 // C-task
 
