@@ -1,16 +1,43 @@
 console.log("train ishga tushdi");
 
+//---------------- F task ------------------------
+
+/* 
+Shunday findDoublers function tuzing, unga faqat bitta string 
+argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+
+*/
+
+function hello(str) {
+  str = str.toLowerCase();
+
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str[i] === str[j]) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+// call
+const natija = hello("Uzbekiston");
+console.log(natija);
+
 //---------------- E task ------------------------
 // Shunday function tuzing, u bitta string argumentni qabul
 // qilib osha stringni teskari qilib return qilsin.
 //MASALAN: getReverse("hello") return qilsin "olleh"
-function hello(harf) {
-  if (harf === "") return "";
-  else return hello(harf.substr(1)) + harf.charAt(0);
-}
-let harf = "gniog si woh";
-const natija = hello(harf);
-console.log(natija);
+// function hello(harf) {
+//   if (harf === "") return "";
+//   else return hello(harf.substr(1)) + harf.charAt(0);
+// }
+// let harf = "gniog si woh";
+// const natija = hello(harf);
+// console.log(natija);
 
 //------------------D-task-------------------------
 
