@@ -1,4 +1,27 @@
 console.log("train ishga tushdi");
+//---------------- G task ------------------------
+
+/* Shunday function tuzingki unga integerlardan
+ iborat array pass bolsinva function bizga osha 
+ arrayning eng katta qiymatiga tegishli birinchi
+  indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+
+ */
+
+function index(arr) {
+  let hightIndexNumber = 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > arr[hightIndexNumber]) {
+      hightIndexNumber = i;
+    }
+  }
+  return hightIndexNumber;
+}
+
+// Test qilish
+console.log(index([5, 21, 12, 21, 8]));
+console.log(index([5, 21, 12, 21, 8]));
 
 //---------------- F task ------------------------
 
@@ -9,23 +32,23 @@ MASALAN: getReverse("hello") return true return qiladi
 
 */
 
-function hello(str) {
-  str = str.toLowerCase();
+// function hello(str) {
+//   str = str.toLowerCase();
 
-  for (let i = 0; i < str.length; i++) {
-    for (let j = i + 1; j < str.length; j++) {
-      if (str[i] === str[j]) {
-        return true;
-      }
-    }
-  }
+//   for (let i = 0; i < str.length; i++) {
+//     for (let j = i + 1; j < str.length; j++) {
+//       if (str[i] === str[j]) {
+//         return true;
+//       }
+//     }
+//   }
 
-  return false;
-}
+//   return false;
+// }
 
-// call
-const natija = hello("Uzbekiston");
-console.log(natija);
+// // call
+// const natija = hello("Uzbekiston");
+// console.log(natija);
 
 //---------------- E task ------------------------
 // Shunday function tuzing, u bitta string argumentni qabul
