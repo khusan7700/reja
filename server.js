@@ -4,7 +4,7 @@ const MongoDB = require("mongodb");
 
 let db;
 const connectionString =
-  "mongodb+srv://Usman:7I1vQ04IkY8Mqs8w@cluster0.5e72uaw.mongodb.net/Reja";
+  "mongodb+srv://Usman:7I1vQ04IkY8Mqs8w@cluster0.5e72uaw.mongodb.net/reja";
 
 MongoDB.connect(
   connectionString,
@@ -20,7 +20,7 @@ MongoDB.connect(
 
       const app = require("./app");
       const server = http.createServer(app);
-      let PORT = 8003;
+      let PORT = 8011;
       server.listen(PORT, function () {
         console.log(
           `The server is running seccessfully on port: ${PORT}, http//localhost:${PORT}`
